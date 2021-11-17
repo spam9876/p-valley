@@ -242,8 +242,14 @@ form {
 .form {
     padding-top: 60px;
     position: relative;
-    display: block;
     text-align: center;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .form > img {
@@ -326,8 +332,7 @@ input[type=text]:focus {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
 }
 
 .footercol > p {
@@ -338,7 +343,7 @@ input[type=text]:focus {
     color: rgb(0, 0, 0, 0.7)
 }
 
-.footercol{
+.footercol {
     float: left;
     width: 33%;
     box-sizing: border-box;
@@ -472,7 +477,7 @@ input[type=text]:focus {
     }
     
     .logo-image > img {
-        width: 100px;
+        width: 150px;
         position: absolute;
         top: 0;
         left: 0;
@@ -576,6 +581,12 @@ input[type=text]:focus {
     
     .footercol > a {
         padding: 5px;
+        font-size: 22px;
+    }
+    
+    .footercol > p {
+        padding: 5px;
+        font-size: 22px;
     }
     
     form {
