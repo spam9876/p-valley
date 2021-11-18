@@ -245,13 +245,6 @@ form {
     text-align: center;
 }
 
-.flex-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .form > img {
     position: absolute;
     width:100%;
@@ -412,12 +405,6 @@ input[type=text]:focus {
 /* media queries */
 
 @media only screen and (max-width: 1000px) {
-    ul > a:not(:first-child) {
-        display:none;
-    }
-    .icon {
-        display: block!important;
-    }
     
     .heroImg1 {
         display: none;
@@ -430,6 +417,14 @@ input[type=text]:focus {
     .heroImg3 {
         display: block!important;
     }
+    
+    ul > a:not(:first-child) {
+        display:none;
+    }
+    .icon {
+        display: block!important;
+    }
+
     
     .col1 {
         padding-right: 20px;
@@ -457,7 +452,8 @@ input[type=text]:focus {
     }
     
     .icon {
-        width: 40px;
+        font-size: 70px;
+        padding-right: 50px;
     }
     
     .topnav.responsive a:not(:last-child) {
@@ -467,11 +463,11 @@ input[type=text]:focus {
         display: block;
         width: 100%;
         text-align: center;
-        font-size: 30px;
+        font-size: 50px;
     }
     
     .fbIcon > img {
-        width: 19px;
+        height: 40px!important;
     }
     
     ul {
@@ -480,7 +476,7 @@ input[type=text]:focus {
     }
     
     .logo-image > img {
-        width: 150px;
+        width: 200px;
         position: absolute;
         top: 0;
         left: 0;
@@ -492,35 +488,43 @@ input[type=text]:focus {
     .topCol3 {
         padding-top: 40%;
     }
+    
+    .footercol > img {
+        width:150px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
     
     p {
-        font-size: 22px;
+        font-size: 32px;
     }
     
     input[type=text] {
-        font-size: 22px;
+        font-size: 32px;
     }
     
     input[type=submit] {
-        font-size: 20px;
+        font-size: 25px;
+    }
+    
+    .topCol3 > a {
+        font-size: 25px;
     }
     
     textarea {
-        font-size: 22px;
+        font-size: 32px;
     }
     
     .topCol3 > p {
-        font-size: 22px;
+        font-size: 32px;
     }
     
     .topCol3 > h1 {
-        font-size: 30px;
+        font-size: 50px;
     }
     
     .topnav {
@@ -535,12 +539,12 @@ input[type=text]:focus {
         float: left;
         padding-left: 20px;
         padding-right: 20px;
-        font-size: 24px;
+        font-size: 30px;
     }
     
     .fbIcon > img {
         width: auto;
-        height: 18px;
+        height: 22px;
     }
     
     .heroImg1 {
@@ -618,6 +622,10 @@ input[type=text]:focus {
         justify-content: center;
         padding-left: 100px;
         padding-right: 100px;
+    }
+    
+    .flex-wrapper {
+        padding-bottom: 90vh;
     }
 }
 
