@@ -41,12 +41,14 @@
         <div class="form flex-wrapper">
             <br><br><br><br><br><br>
             <h1>We're Hiring</h1><br>
-            <form action="/action_page.php">
-                <input type="text" id="fname" name="fname" value="Name"><br>
-                <input type="text" id="" name="" value="Subject"><br>
-                <textarea id="" name="" rows="8">Message</textarea><br><br>
+            <form action="https://formspree.io/f/xyylrwey" method="POST">
+                <input type="text" id="fname" name="Name" placeholder="Name"><br>
+                <input type="email" id="email" name="Email" placeholder="Your Email"><br>
+                <input type="text" id="" name="Subject" placeholder="Subject"><br>
+                <textarea id="Message" name="Message" placeholder="Message" rows="8"></textarea><br><br>
                 <input type="submit" value="Submit">
-            </form>  
+                <input type="text" name="_gotcha" style="display:none"/>
+            </form> 
                     <img src="Images/PV_EDGETEXT4.png" alt="ripped paper texture four"> 
         </div>
         
@@ -74,6 +76,13 @@
                 x.className = "topnav";
               }
             }
+            
+            window.onbeforeunload = () => {
+                for(const form of document.getElementsByTagName('form')) {
+                form.reset();
+                }
+            }
+            
         </script>
         
     </body>
