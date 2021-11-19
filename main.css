@@ -266,6 +266,20 @@ input[type=text] {
     margin: 10px 0px 10px 0px;
 }
 
+input[type=email] {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    outline: none;
+    width: 60%;
+    padding: 15px;
+    border: none;
+    background-color: #E7E7E7;
+    color: #000000;
+    border-radius: 7px;
+    margin: 10px 0px 10px 0px;
+}
+
 input[type=submit] {
     background-color: #EDBC69;
     font-family: 'Bebas Neue', cursive;
@@ -306,6 +320,13 @@ textarea:focus {
 
 input[type=text]:focus {
     background-color: rgb(231, 231, 231, 0.7);
+}
+
+::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #000000;
 }
 
 /* Footer Styles */
@@ -421,6 +442,7 @@ input[type=text]:focus {
     ul > a:not(:first-child) {
         display:none;
     }
+    
     .icon {
         display: block!important;
     }
@@ -429,6 +451,7 @@ input[type=text]:focus {
     .col1 {
         padding-right: 20px;
         padding-left: 20px;
+        padding-bottom: 50px;
     }
     
     .col2{
@@ -501,9 +524,18 @@ input[type=text]:focus {
     
     p {
         font-size: 32px;
+        line-height: 1.5;
     }
     
     input[type=text] {
+        font-size: 32px;
+    }
+    
+    input[type=email] {
+        font-size: 32px;
+    }
+    
+    ::placeholder {
         font-size: 32px;
     }
     
