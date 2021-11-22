@@ -322,6 +322,10 @@ input[type=text]:focus {
     background-color: rgb(231, 231, 231, 0.7);
 }
 
+input[type=email]:focus {
+    background-color: rgb(231, 231, 231, 0.7);
+}
+
 ::placeholder {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
